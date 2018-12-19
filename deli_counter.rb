@@ -1,15 +1,15 @@
 # Write your code here.
 
-def takeANumber(line, name)
+def take_a_Number(line, name)
   line.push(name);
-  return "Welcome, "+ name +". You are number " + line.length +" in line.";
+  return "Welcome, #{name}. You are number #{line.length} in line."
 end
 
-def nowServing(line)
-  if(line.length === 0)
-    return "There is nobody waiting to be served!";
+def line(num)
+  if num.length === 0
+    return "There is nobody waiting to be served!"
   else
-    return "Currently serving " + line.shift() +".";
+    return "Currently serving " + line.shift() +"."
   end
 end
 
@@ -19,10 +19,8 @@ def currentLine(line)
   else
     i = 0;
     while(i < line.length)
-      line[i] = " " + (i + 1) + ". " + line[i];
-      i++;
-    return "The line is currently:" + line;
+      line[i] = " " + (i + 1) + ". " + line[i]
+      i+=1
+    return "The line is currently:" + line
   end
-  return "Welcome, " + name + ". You are number "+ (line.length + 1)  + " in line.";
 end
-
